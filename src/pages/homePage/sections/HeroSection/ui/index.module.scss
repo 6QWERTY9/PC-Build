@@ -1,0 +1,38 @@
+@use '../../../../../shared/styles/mixins' as *;
+@use '../../../../../shared/styles/vars' as *;
+
+.hero_section {
+    
+    width: 100vw;
+    height: 960px;
+
+    background: url('/main-screen__bgc.png');
+    display: grid;
+    
+    align-items: end;
+    grid-template-rows: 1fr 130px;
+    .hero_section_content {
+        width: 85%;
+        height: 100%;
+
+
+        justify-self: end;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+
+        h1 {
+            display: inline-block;
+            max-width: 920px;
+            @include textStyle($size: 68px, $weight:  700)
+        }
+    }
+    .students_progress {
+        width: 100vw;
+        height: 130px;
+        align-self: flex-end;
+        background: #121212;
+    }
+}
