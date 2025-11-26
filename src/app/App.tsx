@@ -1,5 +1,6 @@
-import { Footer } from "@widgets/footer"
-import { Header } from "@widgets/header"
+
+import { Footer } from "@shared/components/footer"
+import { Header } from "@shared/components/header"
 import { BrowserRouter } from "react-router-dom"
 
 
