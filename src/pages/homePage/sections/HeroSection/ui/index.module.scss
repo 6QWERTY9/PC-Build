@@ -34,5 +34,90 @@
         height: 130px;
         align-self: flex-end;
         background: #121212;
+
+        display: grid;
+        justify-content: center;
+        
+        .students_progress_content {
+            height: 100%;
+            height: 100%;
+
+            display: flex;
+            
+            justify-content: space-between;
+            align-items: center;
+
+            gap: 111px;
+            
+            .request_cours {
+                width: 169px;
+                height: 44px;
+
+                border: none;
+                border-radius: 50px;
+                background: $gradient-red-to-purple;
+
+                @include textStyle($weight: 700);
+
+                cursor: pointer;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            .students_count {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                @include textStyle($color: #ffffff94);
+
+                span > .total_students, span > .successfully_completed {
+                    color: #fff
+                }
+
+            }
+
+            .progress_bar_wrapper {
+                width: max-content;
+                height: max-content;
+
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                .earned_by_students {
+                    @include textStyle($color: #ffffff94);
+
+                    & > span {
+                        color: #fff;
+                    }
+                }
+
+                .progress_bar {
+                    width: 714px;
+                    height: 6px;
+                    background: #fff;
+
+                    .progress_bar_fill {
+                        width: 35%;
+                        height: 100%;
+
+                        background: $gradient-red-to-purple;
+                    }
+
+                }
+                .progress_bar_values {
+                    width: 100%;
+                    height: 100%;
+
+                    display: flex;
+                    justify-content: space-between;
+
+                    @include textStyle($color: #ffffff94)
+                }
+            }
+        }
     }
 }
