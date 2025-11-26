@@ -1,0 +1,28 @@
+@use './vars' as *;
+
+@mixin textStyle($size: 14px, $weight: 400, $color: $black, $lineHeight: 20px) {
+    font-family: $defaultFont;
+
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    line-height: $lineHeight;
+}
+
+@mixin respond-between($min-breakpoint, $max-breakpoint) {
+    $min-width: map-get($breakpoints, $min-breakpoint);
+    $max-width: map-get($breakpoints, $max-breakpoint);
+
+    @if $min-width == null {
+        @warn "Брейкпоинт `#{$min-breakpoint}` не найден.";
+    }
+    @if $max-width == null {
+        @warn "Брейкпоинт `#{$max-breakpoint}` не найден.";
+    }
+
+    @if $min-width != null and $max-width != null {
+        @media (min-width: $min-width) and (max-width: $max-width) {
+        @content;
+        }
+    }
+}
