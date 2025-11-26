@@ -54,4 +54,3 @@ src/
 
 ## Контакты
 * Email: yurasmirnovlynxtram@gmail.com
-* Репозиторий: [Ссылка на GitHub]
