@@ -1,6 +1,6 @@
 @use './vars' as *;
 
-@mixin textStyle($size: 14px, $weight: 400, $color: $black, $lineHeight: 20px) {
+@mixin textStyle($size: 16px, $weight: 400, $color: $white, $lineHeight: 150%) {
     font-family: $defaultFont;
 
     font-size: $size;

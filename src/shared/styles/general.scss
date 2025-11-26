@@ -8,9 +8,15 @@ body,
     
 }
 
+#root {
+    margin-top: 38px;
+    margin-bottom: 30px;
+}
+
 body {
     font-family: $defaultFont;
     background: url('/bgc.png') no-repeat;
+    color: $white;
     overflow-x: hidden;
 }
 
@@ -24,6 +30,12 @@ body {
 
 a {
     text-decoration: none;
+    color: $white;
+    transition: all 150ms ease-in-out;
+    &:hover {
+        color: rgb(122, 122, 245);
+        text-decoration: underline;
+    }
 }
 
 ul {

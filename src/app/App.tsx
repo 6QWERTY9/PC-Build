@@ -1,12 +1,16 @@
+import { Footer } from "@widgets/footer"
+import { Header } from "@widgets/header"
+import { BrowserRouter } from "react-router-dom"
 
 
 function App() {
   
 
   return (
-    <>
-      initial
-    </>
+    <BrowserRouter>
+      <Header/>
+      <Footer/>
+    </BrowserRouter>
   )
 }
 

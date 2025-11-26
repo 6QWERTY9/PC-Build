@@ -1,0 +1,14 @@
+@use '../../../styles/vars' as *;
+@use '../../../styles/mixins' as *;
+
+.navigation {
+    width: 100%;
+    height: max-content;
+
+    .navigation_list {
+        display: flex;
+        gap: 56px;
+
+        @include textStyle;
+    }
+}

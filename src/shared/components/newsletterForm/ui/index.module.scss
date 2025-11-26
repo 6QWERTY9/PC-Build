@@ -1,0 +1,46 @@
+@use '../../../styles/mixins' as *;
+@use '../../../styles/vars' as *;
+.newsletter_subscribe_form {
+    position: relative;
+
+    width: max-content;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .email_input {
+        width: 353px;
+        height: 44px;
+    
+        background: #ffffff92;
+    
+        border-radius: 50px;
+        opacity: 25%;
+    
+        padding-left: 5%;
+        
+        // Стили для placeholder
+        &::placeholder {
+            @include textStyle;
+        }
+
+        outline: none;
+    }
+    
+    .subscribe_btn {
+        width: 160px;
+        height: 44px;
+    
+        background: $gradient-red-to-purple;
+    
+        border: none;
+        border-radius: 50px;
+    
+        @include textStyle($weight: 700);
+    
+        cursor: pointer;
+    
+        
+        
+    }
+}
