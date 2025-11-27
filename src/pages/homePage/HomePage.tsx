@@ -3,6 +3,7 @@ import { HeroSection } from "./sections/HeroSection"
 import { AboutUsSection } from "./sections/aboutUsSection"
 import { QuickStart } from "./sections/quickStart"
 import { AboutTraining } from "./sections/AboutTraining"
+import { Partners } from "./sections/partners"
 
 export const HomePage = () => {
     return (
@@ -11,6 +12,7 @@ export const HomePage = () => {
             <AboutUsSection/>
             <QuickStart/>
             <AboutTraining/>
+            <Partners/>
         </Layoutpage>
     )
 }

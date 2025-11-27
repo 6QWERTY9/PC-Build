@@ -1,0 +1,37 @@
+@use '../../../../../shared/styles/mixins' as *;
+
+.partners {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+
+
+    .title_wrapper {
+        display: flex;
+        align-items: center;
+        gap: 51px;
+        h2 {
+            @include textStyle($size: 48px, $weight:700);
+        }
+    }
+
+    .partners_wrapper {
+        width: 1290px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        align-items: center;
+
+        .logo_partners {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo_partners:not(:nth-child(4n)){
+            border-right: 2px solid gray;
+        }
+        .logo_partners:nth-child(-n+4) {
+            border-bottom: 2px solid gray;
+        }
+    }
+}

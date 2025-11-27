@@ -17,7 +17,7 @@
             @include textStyle($size: 24px, $weight: 500)
         }
         p {
-            max-width: 350px;
+            max-width: 270px;
             @include textStyle;
             opacity: 50%;
             
