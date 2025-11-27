@@ -1,0 +1,63 @@
+@use '../../../../../shared/styles/mixins' as *;
+@use '../../../../../shared/styles/vars' as *;
+
+.quick_start_content {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    .text_content {
+        .title_wrapper {
+            display: flex;
+            gap: 20px;
+            h2 {
+                @include textStyle($size: 48px, $weight: 700);
+                
+            }
+        }
+        p {
+            @include textStyle($size: 16px);
+            opacity: 50%;
+            max-width: 411px;
+            margin-top: 50px;
+        }
+    }
+
+    .QuickStartPropgressBar_wrapper {
+        
+        height: 420px;
+        display: flex;
+        .quick_start_propgress_bar {
+            width: 324px;
+            height: 273px;
+            display: grid;
+            align-content: center;
+            gap: 35px;
+            margin-top: 80px;
+            h3 {
+                @include textStyle($size: 36px, $weight: 700)
+            }
+
+            .fill_bar {
+                max-height: 80px;
+                min-height: 10px;
+
+                width: 100%;
+
+                background: $gradient-pink-to-blue;
+                margin-top: 20px;
+                
+
+                
+            }
+            p {
+                max-width: 280px;
+                @include textStyle;
+                opacity: 50%;
+                margin-top: 35px;
+            }
+
+            
+        }
+        
+    }
+}

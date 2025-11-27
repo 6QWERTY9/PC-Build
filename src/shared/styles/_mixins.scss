@@ -27,3 +27,8 @@
     }
 }
 
+@mixin section_content_center {
+    display: grid;
+    justify-content: center;
+}
+

@@ -1,57 +1,48 @@
 @use '../../../../../shared/styles/mixins' as *;
 @use '../../../../../shared/styles/vars' as *;
 
+.content_section {
+    display: flex;
+    align-items: center;
+    gap: 140px;
 
-.about_us {
-    width: 100%;
-    height: 542px;
-
-    display: grid;
-    justify-content: center;
-
-    .content_section {
-        display: flex;
-        align-items: center;
-        gap: 140px;
-
-        .text_content {
-            h2 {
-                width: max-content;
-                height: max-content;
-                @include textStyle($size: 48px, $weight: 700)
-            }
-
-            p {
-                @include textStyle;
-                opacity: 50%;
-                
-                display: inline-block;
-
-                max-width: 639px;
-                margin-top: 45px;
-            }
+    .text_content {
+        h2 {
+            width: max-content;
+            height: max-content;
+            @include textStyle($size: 48px, $weight: 700)
         }
 
-        .about_us_image_wrapper {
-            width: 526px;
-            height: 500px;
-            background: $gradient-pink-to-blue;
-            position: relative;
+        p {
+            @include textStyle;
+            opacity: 50%;
+            
+            display: inline-block;
 
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            max-width: 639px;
+            margin-top: 45px;
+        }
+    }
 
-            .about_us_image_bg {
-                width: 90%;
-                height: 90%;
-                background: url('/bgc.png') no-repeat;
-            }
+    .about_us_image_wrapper {
+        width: 526px;
+        height: 500px;
+        background: $gradient-pink-to-blue;
+        position: relative;
 
-            .pc_image {
-                position: absolute;
-                top: 16%;
-            }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .about_us_image_bg {
+            width: 90%;
+            height: 90%;
+            background: url('/bgc.png') no-repeat;
+        }
+
+        .pc_image {
+            position: absolute;
+            top: 16%;
         }
     }
 }

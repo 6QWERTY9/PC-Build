@@ -1,0 +1,8 @@
+@use '../../../styles/mixins' as *;
+
+.section_content {
+    width: 100%;
+    height: 542px;
+
+    @include section_content_center;
+}

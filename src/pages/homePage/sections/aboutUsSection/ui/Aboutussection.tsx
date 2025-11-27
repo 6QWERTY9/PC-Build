@@ -1,9 +1,11 @@
 import { getAssetPath } from '@shared/lib/getPath';
 import css from './index.module.scss';
 
+import { Sectioncontent } from '@shared/components/sectionContent';
+
 export const AboutUsSection = () => {
   return (
-    <section className={css.about_us}>
+    <Sectioncontent>
       <div className={css.content_section}>
         <AboutUsSectionImage/>
         <div className={css.text_content}>
@@ -13,7 +15,7 @@ export const AboutUsSection = () => {
           </p>
         </div>
       </div>
-    </section>
+    </Sectioncontent>
   )
 }
 
