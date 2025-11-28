@@ -14,7 +14,7 @@ body,
 
 body {
     font-family: $defaultFont;
-    background: url('/bgc.png') no-repeat;
+    background: url('/bgc.png');
     color: $white;
     overflow-x: hidden;
 }
